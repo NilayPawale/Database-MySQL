@@ -1,0 +1,36 @@
+Database Commands
+
+1. Create New Database
+create database ccee;
+
+2. Use Databse
+use database ccee;
+
+3. Load the File
+source C:\Users\Nilaypawale\Desktop\C-DAC\CCEE\Database\CODE\employee.sql
+
+4. To Remove Table
+drop table emp;
+
+5. To See all Databases
+show databases;
+
+6. To See all Tables
+show tables;
+
+
+Questions Related to Employee Table
+
+1. Show All Employees
+select * from emp;
+
+2. Show all Departments
+select * from dept;
+
+3. Show all salaries
+select * from salgrade;
+
+4. Describe Employee Table
+desc emp;
+
+

@@ -1,0 +1,16 @@
+Database Assignment 1 - Group functions  
+
+1. Display the Highest, Lowest, Total & Average salary of all employee. Label the columns Maximum, Minimum, Total and Average respectively for each Department. Also round the result to the nearest whole number. 
+select deptno,
+round(max(sal)) as maximum,
+round(min(sal)) as minimum,
+round(sum(sal)) as total,
+round(avg(sal)) as average
+from emp
+group by deptno;
+
+
+2. Display Department no and number of managers working in that department. Label the column as ‘Total Number of Managers’ for each department. 
+select deptno,
+
+3. Get the Department number, and sum of Salary of all non managers where the sum is greater than 20000.

@@ -1,0 +1,20 @@
+Database Assignment 1 - Single Row Functions
+
+1. To list all employees and their email, to generate email use 2 to 5 characters from ename Concat it with 2 to 4 characters in job and then concat it with ‘@mycompany.com’ 
+select CONCAT(ename,'_',job,'@mycompany')Email_Id from emp;
+
+2. List all employees who joined in September. 
+select * from emp where month(hiredate)=9;
+
+3. List the empno, name, and department number of the emp who have experience of 18 or more years and sort them based on their experience. 
+select empno, ename, deptno,
+datediff(curdate(), hiredate) /365 as Experience
+from emp
+where datediff(curdate(), hiredate) /365>=18
+order by Experience desc;
+
+4. Display the employee details who joined on 3rd of any month or any year 
+select * from emp where day(hiredate) = 3;
+
+5. display all employees who joined between years 1981 to 1983.  
+select * from emp where year(hiredate) between 1981 and 1983;
